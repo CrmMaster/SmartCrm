@@ -1,0 +1,30 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+mat-drawer{
+    width: 20rem;
+    
+    border-radius: 0.2rem;
+    color: black;
+}
+
+mat-drawer-container{
+    height: 100%;
+    background-color: #f0ebeb;
+}
+
+mat-drawer-content{
+    padding: 1.5rem;
+    
+}
+
+mat-divider{
+    color: black;
+}
+
+
+
+

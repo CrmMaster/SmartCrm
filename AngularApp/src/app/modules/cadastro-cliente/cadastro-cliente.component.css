@@ -1,0 +1,29 @@
+
+
+.container__clientes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container__clientes__esquerda{
+    width: 47.99%;
+    
+}
+
+.container__clientes__direita{
+    width: 47.99%;
+    text-align: end;
+}
+
+.btn-novo{
+    background-color: #05ad05;
+  }
+i{
+    color: white;
+}
+  .container__geral{
+    background-color: white;
+    height: 100%;
+    border-radius: 3px;
+    padding: 1rem;
+  }

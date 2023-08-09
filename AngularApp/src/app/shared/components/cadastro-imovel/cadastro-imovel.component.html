@@ -1,0 +1,232 @@
+<mat-stepper class="largura" orientation="horizontal" [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>localização</ng-template>
+        <div class="d-flex gap-1 flex-wrap">
+          <mat-form-field>
+            <mat-label>Rua</mat-label>
+            <input matInput placeholder="Rua abc" formControlName="firstCtrl" required>
+          </mat-form-field>
+          <mat-form-field>
+              <mat-label>Bairro</mat-label>
+              <input matInput placeholder="Paulista" formControlName="firstCtrl" required>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>CEP</mat-label>
+              <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Número</mat-label>
+                <input matInput placeholder="123" formControlName="firstCtrl">
+              </mat-form-field>
+              <mat-form-field>
+                <mat-label>Complemento</mat-label>
+                <input matInput placeholder="Casa 05" formControlName="firstCtrl">
+              </mat-form-field>
+              <mat-form-field>
+                <mat-label>Cicade</mat-label>
+                <input matInput placeholder="São Paulo" formControlName="firstCtrl" required>
+              </mat-form-field>
+              <mat-form-field>
+                <mat-label>UF</mat-label>
+                <input matInput placeholder="SP" formControlName="firstCtrl" required>
+              </mat-form-field>
+              <mat-form-field>
+                <mat-label>Administradora</mat-label>
+                <input matInput placeholder="" formControlName="firstCtrl" required>
+              </mat-form-field>
+              <mat-form-field>
+                <mat-label>Construtora</mat-label>
+                <input matInput placeholder="" formControlName="firstCtrl" required>
+              </mat-form-field>
+              <mat-form-field>
+                <mat-label>Proprietario</mat-label>
+                <input matInput placeholder="" formControlName="firstCtrl" required>
+              </mat-form-field>
+              <mat-form-field>
+                <mat-label>Telefone - Proprietario</mat-label>
+                <input matInput placeholder="" formControlName="firstCtrl" required>
+              </mat-form-field>
+              <mat-form-field>
+                <mat-label>Email Proprietario</mat-label>
+                <input matInput placeholder="" formControlName="firstCtrl" required>
+              </mat-form-field>
+              <mat-form-field>
+                <mat-label>Construção</mat-label>
+                <mat-select>
+                  <mat-option value="opcao1">Novo</mat-option>
+                  <mat-option value="opcao2">Usado</mat-option>
+                  <mat-option value="opcao3">Na Planta</mat-option>
+                  <mat-option value="opcao4">Em obra</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field class="example-form-field">
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepicker]="datepicker">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="datepicker"></mat-datepicker-toggle>
+                <mat-datepicker #datepicker>
+                  <mat-datepicker-actions>
+                    <button mat-button matDatepickerCancel>Cancel</button>
+                    <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+                  </mat-datepicker-actions>
+                </mat-datepicker>
+              </mat-form-field>
+          </div>
+
+        <div>
+          <button mat-button matStepperNext>Próximo</button>
+        </div>
+
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Imóvel</ng-template>
+        <div class="d-flex gap-1 flex-wrap">
+          <mat-form-field>
+            <mat-label>Quartos</mat-label>
+            <input matInput type="number" formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Suites</mat-label>
+            <input matInput type="number" formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Banheiro</mat-label>
+            <input matInput type="number" formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Vagas</mat-label>
+            <input matInput type="number" formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Possui Mobilia</mat-label>
+            <input matInput formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Area Total construida</mat-label>
+            <input matInput type="number" formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Area Total Privativa</mat-label>
+            <input matInput  type="number" formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Area Ultil</mat-label>
+            <input matInput type="number" formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>
+
+        </div>
+
+        <div>
+          <button mat-button matStepperPrevious>Voltar</button>
+          <button mat-button matStepperNext>Próximo</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <!--Informações referent a lazer e condominio-->
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Lazer e condominio</ng-template>
+        <div class="d-flex gap-1 flex-wrap">
+          <mat-checkbox formControlName="secondCtrl">Bicicletario</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Brinquedoteca </mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Churrasqueira Coletiva</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Piscina Adulta</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Piscina Infantil</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Playground</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Quadra PoliEsportiva</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Campo de Futebol</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Salão de festas</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Sala de Jogos</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Saúna</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Spa</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Office</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Pet Place</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Quiósque</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Espaço Mulher</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Car Wash</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Academia</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Academia ao ar livre</mat-checkbox>   
+          <mat-checkbox formControlName="secondCtrl">Aquecimento Central</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Gerador</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Deposito</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Elevador de Serviços</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Entrada de Serviços</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Vaga de Visitante</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Guarita</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Portaria 24hrs</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Lavanderia</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Zelador</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Vigilância</mat-checkbox>          
+        </div>
+        <div>
+          <button mat-button matStepperPrevious>Voltar</button>
+          <button mat-button matStepperNext>Próximo</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <!--Informações referent a financeiro-->
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Financeiro</ng-template>
+        <div class="d-flex gap-1 flex-wrap">
+          <mat-form-field>
+            <mat-label>N° da matricula</mat-label>
+            <input matInput formControlName="secondCtrl" placeholder="" required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>N° do IPTU</mat-label>
+            <input matInput formControlName="secondCtrl" placeholder="" required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Valor de Venda</mat-label>
+            <input matInput formControlName="secondCtrl" placeholder="" required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Valor de Locação</mat-label>
+            <input matInput formControlName="secondCtrl" placeholder="" required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Valor do Condominio</mat-label>
+            <input matInput formControlName="secondCtrl" placeholder="" required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Seguro Incendio</mat-label>
+            <input matInput formControlName="secondCtrl" placeholder="" required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Valor do Iptu</mat-label>
+            <input matInput formControlName="secondCtrl" placeholder="" required>
+          </mat-form-field>
+          <mat-checkbox formControlName="secondCtrl">MCMV</mat-checkbox>
+          <mat-checkbox formControlName="secondCtrl">Aceita Financiamento</mat-checkbox>
+        </div>
+        <div>
+          <button mat-button matStepperPrevious>Voltar</button>
+          <button mat-button matStepperNext>Próximo</button>
+        </div>
+      </form>
+    </mat-step>
+
+
+    <mat-step>
+      <ng-template matStepLabel>Fim</ng-template>
+      <p>Verifique as informações antes de finalizar o cadastro.</p>
+      <div>
+        <button mat-button matStepperPrevious>Voltar</button>
+        <button mat-button (click)="stepper.reset()">Cadastrar</button>
+      </div>
+    </mat-step>
+  </mat-stepper>

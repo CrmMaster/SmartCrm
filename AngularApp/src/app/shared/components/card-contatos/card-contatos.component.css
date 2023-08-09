@@ -1,0 +1,31 @@
+.example-card {
+  max-width: 400px;
+  background-color: white;  
+  margin: auto;
+}
+
+.btn-excluir{
+  background-color: #F55246;
+}
+
+.btn-alterar{
+  background-color: #F5CF3D;
+}
+
+.btn-expandir{
+  background-color: #DCDCDC;
+}
+
+div{
+  margin-bottom: 0.25rem;
+}
+
+button{
+  margin-right: 0.5rem;
+}
+
+mat-card-actions{
+  justify-content: end;
+  border-top: 1px solid black;
+  border-radius: 3px;
+}

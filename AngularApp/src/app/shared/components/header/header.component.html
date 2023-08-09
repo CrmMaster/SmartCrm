@@ -1,0 +1,35 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <span><img src="./assets/img/300.png" alt=""></span>
+
+        <button mat-button color="basic" (click)="abrirFecharMenu()">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+            <ul fxLayout="row" fxLayoutgap="20px">
+                <li>
+                    <button mat-button>
+                        <mat-icon>settings</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-button>
+                        <mat-icon>helpe_outline</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu">
+                        <mat-icon>person_outline</mat-icon>
+                    </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item>
+                                <mat-icon>exit_to_app</mat-icon>
+                                Logout
+                            </button>
+                        </mat-menu>
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

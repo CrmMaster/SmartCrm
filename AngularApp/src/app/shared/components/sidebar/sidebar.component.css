@@ -1,0 +1,25 @@
+.perfil-card{
+    text-align: center;
+    padding: 1.2rem;
+    
+}
+
+img{
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+mat-divider{
+    color: black;
+}
+
+a{
+    color: black !important;
+}
+
+mat-icon{
+    vertical-align: middle;
+    margin-right: 1rem;
+}
