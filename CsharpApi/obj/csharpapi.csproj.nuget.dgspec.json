@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jhow\\Desktop\\SmartCrm\\csharpapi\\csharpapi.csproj": {}
+    "C:\\Users\\Jhow\\Desktop\\SmartCrm\\smartcrm\\csharpapi\\csharpapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jhow\\Desktop\\SmartCrm\\csharpapi\\csharpapi.csproj": {
+    "C:\\Users\\Jhow\\Desktop\\SmartCrm\\smartcrm\\csharpapi\\csharpapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jhow\\Desktop\\SmartCrm\\csharpapi\\csharpapi.csproj",
+        "projectUniqueName": "C:\\Users\\Jhow\\Desktop\\SmartCrm\\smartcrm\\csharpapi\\csharpapi.csproj",
         "projectName": "csharpapi",
-        "projectPath": "C:\\Users\\Jhow\\Desktop\\SmartCrm\\csharpapi\\csharpapi.csproj",
+        "projectPath": "C:\\Users\\Jhow\\Desktop\\SmartCrm\\smartcrm\\csharpapi\\csharpapi.csproj",
         "packagesPath": "C:\\Users\\Jhow\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jhow\\Desktop\\SmartCrm\\csharpapi\\obj\\",
+        "outputPath": "C:\\Users\\Jhow\\Desktop\\SmartCrm\\smartcrm\\csharpapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jhow\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -10,6 +10,7 @@ namespace CsharpApi.Models
     {
         public DbSet<Contato> Contatos { get; set; }
         public DbSet<Imovel> Imoveis { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
         public Contexto(DbContextOptions<Contexto> options) : base(options)
         {
