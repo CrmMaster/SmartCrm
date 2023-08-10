@@ -1,23 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultModule } from './layouts/default/default.module';
-
-
-
-
-
-
+import { HomeSmartCrmModule } from './modules/home-smart-crm/home-smart-crm.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    
-
-  ],
+  declarations: [AppComponent, HomeSmartCrmModule],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -25,6 +16,6 @@ import { DefaultModule } from './layouts/default/default.module';
     DefaultModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

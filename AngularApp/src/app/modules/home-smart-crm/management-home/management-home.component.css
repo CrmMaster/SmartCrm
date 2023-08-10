@@ -1,0 +1,51 @@
+#management {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: start;
+  color: #22343d;
+  margin-top: 100px;
+}
+.text-description {
+  width: 40%;
+}
+.text-description h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.text-description strong {
+  font-size: 15px;
+  font-weight: bold;
+}
+.text-description p {
+  font-size: 13px;
+}
+#img-management {
+  margin-left: 100px;
+}
+
+@media (max-width: 780px) {
+  /*description service*/
+  #management {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #img-management {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  #img-management img {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .text-description {
+    width: 65%;
+  }
+}

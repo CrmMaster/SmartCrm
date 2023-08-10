@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
+import { CadastroClienteComponent } from './modules/cadastro-cliente/cadastro-cliente.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { PostsComponent } from './modules/posts/posts.component';
-import { CadastroClienteComponent } from './modules/cadastro-cliente/cadastro-cliente.component';
 
 const routes: Routes = [{
     path: '',
@@ -18,6 +18,10 @@ const routes: Routes = [{
       path:'cadastroCliente',
       component:CadastroClienteComponent
     }]
+  },{
+    path:'home',
+    loadChildren: () => import('./modules/home-smart-crm/home-smart-crm.module').then(m => m.HomeSmartCrmModule),
+
   }];
 
 @NgModule({
