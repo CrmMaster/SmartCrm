@@ -8,9 +8,10 @@ import { DefaultModule } from './layouts/default/default.module';
 import { HomeSmartCrmModule } from './modules/home-smart-crm/home-smart-crm.module';
 
 @NgModule({
-  declarations: [AppComponent, HomeSmartCrmModule],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
+    HomeSmartCrmModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     DefaultModule,

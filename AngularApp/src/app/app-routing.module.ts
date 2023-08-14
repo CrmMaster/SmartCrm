@@ -5,27 +5,41 @@ import { CadastroClienteComponent } from './modules/cadastro-cliente/cadastro-cl
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { PostsComponent } from './modules/posts/posts.component';
 
-const routes: Routes = [{
+const routes: Routes = [
+  {
     path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full',
+  },
+  {
+    path: 'dashboard',
     component: DefaultComponent,
-    children:[{
-      path:'',
-      component:DashboardComponent
-    },{
-      path:'posts',
-      component:PostsComponent
-    },{
-      path:'cadastroCliente',
-      component:CadastroClienteComponent
-    }]
-  },{
-    path:'home',
-    loadChildren: () => import('./modules/home-smart-crm/home-smart-crm.module').then(m => m.HomeSmartCrmModule),
-
-  }];
+    children: [
+      {
+        path: '',
+        component: DashboardComponent,
+      },
+      {
+        path: 'posts',
+        component: PostsComponent,
+      },
+      {
+        path: 'cadastroCliente',
+        component: CadastroClienteComponent,
+      },
+    ],
+  },
+  {
+    path: 'home',
+    loadChildren: () =>
+      import('./modules/home-smart-crm/home-smart-crm.module').then(
+        (m) => m.HomeSmartCrmModule
+      ),
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
