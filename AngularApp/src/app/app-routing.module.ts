@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
 import { CadastroClienteComponent } from './modules/cadastro-cliente/cadastro-cliente.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { LoginIndexComponent } from './modules/login/login-index/login-index.component';
 import { PostsComponent } from './modules/posts/posts.component';
 
 const routes: Routes = [
@@ -35,6 +36,10 @@ const routes: Routes = [
       import('./modules/home-smart-crm/home-smart-crm.module').then(
         (m) => m.HomeSmartCrmModule
       ),
+  },
+  {
+    path: 'login',
+    component: LoginIndexComponent,
   },
 ];
 
