@@ -8,7 +8,7 @@ import { PostsComponent } from './modules/posts/posts.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
   {
