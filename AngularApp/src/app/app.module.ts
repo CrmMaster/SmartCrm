@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DefaultModule } from './layouts/default/default.module';
 import { HomeSmartCrmModule } from './modules/home-smart-crm/home-smart-crm.module';
+import { LoginModule } from './modules/login/login.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     HomeSmartCrmModule,
+    LoginModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     DefaultModule,

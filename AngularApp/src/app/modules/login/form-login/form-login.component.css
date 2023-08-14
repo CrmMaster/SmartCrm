@@ -1,0 +1,15 @@
+.card {
+  max-width: 600px;
+  margin-bottom: 8px;
+  
+}
+
+.login {
+  height: 40px;
+  border-radius: 10px;
+  background-color: #02897a;
+  color: #fff;
+  text-align: center;
+  border: solid 1px #bcd0e5;
+  cursor: pointer;
+}
