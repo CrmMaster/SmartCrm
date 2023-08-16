@@ -1,0 +1,47 @@
+<mat-stepper linear #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Informações Pessoais</ng-template>
+      <div>
+        <app-cadastro-informacoes-pessoais></app-cadastro-informacoes-pessoais>
+      </div>
+      <div class="my-3 d-flex justify-content-end">
+        <button mat-raised-button matStepperNext class="button-next">
+          Next
+        </button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Endereço</ng-template>
+      <div>
+        <app-cadastro-endereco></app-cadastro-endereco>
+      </div>
+      <div class="my-3 d-flex justify-content-end">
+        <button mat-raised-button matStepperPrevious>Back</button>
+        <button mat-raised-button matStepperNext class="button-next ms-2">
+          Next
+        </button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Plano</ng-template>
+    <div>
+      <app-cadastro-plano></app-cadastro-plano>
+    </div>
+    <div class="my-3 d-flex justify-content-end">
+      <button mat-raised-button matStepperPrevious>Back</button>
+      <button mat-raised-button matStepperNext class="button-next">Next</button>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Finalizar Cadastro</ng-template>
+    <div><app-finalizar-cadastro></app-finalizar-cadastro></div>
+    <div class="my-3 d-flex justify-content-end">
+      <button mat-raised-button matStepperPrevious>Back</button>
+      <button mat-raised-button class="button-next">Cadastrar</button>
+    </div>
+  </mat-step>
+</mat-stepper>

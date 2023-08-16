@@ -9,7 +9,7 @@
   </div>
   <mat-card-content >
     <div class="d-flex flex-column align-items-center my-3">
-        <a href="" class="text-decoration-none">Não tem uma conta? <strong>Cadastre-se gratuitamente!</strong></a>
+        <a (click)="cadastroModal()" class="text-decoration-none">Não tem uma conta? <strong>Cadastre-se gratuitamente!</strong></a>
     </div>
     <form [formGroup]="form" class="d-flex flex-column align-items-center mt-4">
       <mat-form-field appearance="outline" class="w-75 my-2">

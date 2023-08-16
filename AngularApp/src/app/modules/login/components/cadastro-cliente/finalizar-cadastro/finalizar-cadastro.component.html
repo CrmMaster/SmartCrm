@@ -1,0 +1,55 @@
+<mat-card class="card">
+  <mat-card-content>
+    <form [formGroup]="form">
+      <div class="row">
+        <mat-form-field appearance="outline" class="col-md-3">
+          <mat-label>E-mail</mat-label>
+          <input matInput mask="0*" formControlName="email" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="col-md-3">
+          <mat-label>Senha</mat-label>
+          <div class="d-flex">
+            <input
+              matInput
+              placeholder="Senha"
+              [type]="hide ? 'password' : 'text'"
+              formControlName="senha"
+              required
+            />
+            <button mat-mini-fab (click)="hide = !hide" class="button-hide">
+              <i class="fa-solid fa-eye-slash" *ngIf="hide"></i>
+              <i class="fa-solid fa-eye" *ngIf="!hide"></i>
+            </button>
+          </div>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="col-md-3">
+          <mat-label>Confirmar Senha</mat-label>
+          <div class="d-flex">
+            <input
+              matInput
+              placeholder=""
+              [type]="hide ? 'password' : 'text'"
+              formControlName="confirmSenha"
+              required
+            />
+            <button
+              mat-mini-fab
+              (click)="hideConfirme = !hideConfirme"
+              class="button-hide"
+            >
+              <i class="fa-solid fa-eye-slash" *ngIf="hideConfirme"></i>
+              <i class="fa-solid fa-eye" *ngIf="!hideConfirme"></i>
+            </button>
+          </div>
+          <mat-hint
+            *ngIf="
+              form.controls['senha'].value !==
+              form.controls['confirmSenha'].value
+            "
+            ><span class="error-hint">Não confere com a senha</span></mat-hint
+          >
+        </mat-form-field>
+      </div>
+    </form></mat-card-content
+  ></mat-card
+>
