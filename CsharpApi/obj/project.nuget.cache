@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DU2G7xGp4od0tJUAUBB0AjR26ABmf/tBSBAgKDkmsbRBMwrr08kyrYo8ogXtFYmvg+9SZWtkYMa+FhuP96TPig==",
+  "dgSpecHash": "UDWoJ/bT0zHedcuEg0+PgUgt08nSeCNcGdV3E2fE5UUHsURLDFyRR83is9/uagNT0Yq55Q2yCaZy8NPb2IrIqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jhow\\Desktop\\SmartCrm\\smartcrm\\csharpapi\\csharpapi.csproj",
+  "projectFilePath": "C:\\Users\\Jhow\\Desktop\\SmartCrm\\SmartCrm\\csharpapi\\csharpapi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jhow\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Jhow\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

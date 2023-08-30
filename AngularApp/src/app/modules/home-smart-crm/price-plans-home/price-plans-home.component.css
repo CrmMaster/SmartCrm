@@ -10,13 +10,17 @@
 }
 .price-list {
   display: flex;
-  width: 70%;
+  width: 85%;
   justify-content: space-around;
   margin-top: 30px;
 }
 
+.margin_aux{
+  margin-bottom: 3.2rem;
+}
+
 .prices {
-  width: 26%;
+  width: 32%;
   display: flex;
 
   align-items: center;
@@ -30,6 +34,7 @@
 .prices h3 {
   font-size: 25px;
   font-weight: bold;
+  margin-top: 1rem;
 }
 .price-number {
   font-size: 14px;
@@ -40,15 +45,16 @@
 }
 .price-number span {
   width: 20%;
-  font-size: 60px;
+  font-size: 4rem;
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 6.3rem;
 }
 
 .list-advantage ul {
   list-style: none;
   font-size: 14px;
-  text-align: center;
+  text-align: initial;
+  margin-right: 2rem;
 }
 .list-advantage li {
   margin-top: 10px;
@@ -69,7 +75,7 @@
   font-weight: bold;
 }
 .prices2 {
-  width: 26%;
+  width: 32%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,9 +89,9 @@
 .price-number2 span {
   color: #fff;
   width: 20%;
-  font-size: 60px;
+  font-size: 4rem;
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 7.8rem;
 }
 .data-price2 {
   text-align: center;
@@ -124,6 +130,7 @@
 .prices2 h3 {
   font-size: 25px;
   font-weight: bold;
+  margin-top: 1rem;
 }
 .price-number3 {
   font-size: 14px;
@@ -136,7 +143,7 @@
   width: 20%;
   font-size: 60px;
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: 7.5rem;
 }
 .btn-price {
   width: 50%;
@@ -164,6 +171,13 @@
   height: 40px;
   margin: 20px auto;
   cursor: pointer;
+}
+
+.text-prices{
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+  width: 90%;
+
 }
 
 @media (max-width: 780px) {

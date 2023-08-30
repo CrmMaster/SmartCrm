@@ -57,7 +57,11 @@ header {
   padding: 5px;
   text-decoration: none;
   color: #22343d;
-  width: 50%;
+  width: 100%;
+}
+
+.links-nav:hover{
+  border-bottom: 2px solid #02897a;
 }
 #links > ol > li :hover {
   color: #517b91;
@@ -74,6 +78,11 @@ header {
   cursor: pointer;
 }
 
+.login:hover{
+  background-color: #02897a;
+  color: #fff;
+}
+
 .created {
   background-color: #02897a;
   color: #fff;
@@ -84,6 +93,11 @@ header {
   border: solid 1px #bcd0e5;
   margin-left: 10px;
   cursor: pointer;
+}
+
+.created:hover{
+  background: #fff;
+  color: #02897a;
 }
 #group-bottons {
   width: 280px;
