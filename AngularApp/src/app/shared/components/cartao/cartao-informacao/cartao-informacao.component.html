@@ -1,0 +1,70 @@
+<!-- <form [formGroup]="form" #ngForm="ngForm">
+  <fieldset formGroupName="infoCartao">
+    <div class="my-4">
+      <div class="row">
+        <div class="col-md-6">
+          <mat-radio-group aria-label="Selecione o tipo do seu cartão" formControlName="tipoCartao">
+            <mat-radio-button class="me-5" [value]="'CREDITO'">Cartão de Crédito</mat-radio-button>
+            <mat-radio-button [value]="'DEBITO' ">Cartão de Débito</mat-radio-button>
+          </mat-radio-group>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <mat-form-field [appearance]="'fill'" class="w-100 mb-2">
+          <mat-label>Número do Cartão</mat-label>
+          <input matInput
+            mask="0000 0000 0000 0000||0000 0000 0000 00||0000 0000 0000 000||0000 0000 0000 0000 0||0000 0000 0000 0000 00||0000 0000 0000 0000 000"
+            formControlName="numeroCartao" (ngModelChange)='alteraCartao($event)'>
+          <mat-hint align="end" class="error-hint" *ngIf="creditCard?.value && creditCard?.errors?.['valid']">Cartão de
+            Crédito inválido.</mat-hint>
+          <mat-hint align="end" class="error-hint"
+            *ngIf="(creditCard?.touched || ngForm.submitted ) && creditCard?.errors?.['required']">Campo obrigatório.
+          </mat-hint>
+        </mat-form-field>
+      </div>
+      <div class="col-md-2">
+        <cartao-bandeira [codigo]="codigoCartao" class="shadow-sm rounded" [style.height]="'60px'"></cartao-bandeira>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <mat-form-field [appearance]="'fill'" class="w-100 mb-2">
+          <mat-label>Data de validade</mat-label>
+          <input matInput mask="M0/00" [leadZeroDateTime]="true" formControlName="dataValidade">
+          <mat-hint align="end" class="error-hint" *ngIf="dataValidade?.value && dataValidade?.errors?.['valid']">Cartão
+            vencido.</mat-hint>
+          <mat-hint align="end" class="error-hint"
+            *ngIf="(dataValidade?.touched || ngForm.submitted ) && dataValidade?.errors?.['required']">Campo
+            obrigatório.</mat-hint>
+          <mat-hint align="end" *ngIf="dataValidade?.untouched || ngForm.valid || !dataValidade?.errors?.['valid']">
+            Formato: MM/AA</mat-hint>
+        </mat-form-field>
+      </div>
+      <div class="col-md-3">
+        <mat-form-field [appearance]="'fill'" class="w-100 mb-2">
+          <mat-label>Código Segurança (CVV)</mat-label>
+          <input matInput minlength="3" maxlength="4" mask="0*" formControlName="codigoSeguranca">
+          <mat-hint align="end" class="error-hint"
+            *ngIf="codigoSeguranca?.value && codigoSeguranca?.errors?.['minlength']">O campo deve conter no minimo 3
+            dígitos.</mat-hint>
+          <mat-hint align="end" class="error-hint"
+            *ngIf="(codigoSeguranca?.touched || ngForm.submitted ) && codigoSeguranca?.errors?.['required']">Campo
+            obrigatório.</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <mat-form-field [appearance]="'fill'" class="w-100 mb-2">
+          <mat-label>Apelido do Cartão</mat-label>
+          <input matInput formControlName="apelido">
+          <mat-hint align="end" class="error-hint"
+            *ngIf="(apelido?.touched || ngForm.submitted ) && apelido?.errors?.['required']">Campo obrigatório.
+          </mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+  </fieldset>
+</form> -->

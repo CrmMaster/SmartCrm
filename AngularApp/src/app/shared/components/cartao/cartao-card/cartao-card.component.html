@@ -1,0 +1,26 @@
+<!-- <mat-card class="cartao mat-elevation-z2">
+  <div class='cartao__flag'>
+    <cartao-bandeira [codigo]="cartao.numeroCartao!" class="shadow-sm rounded"></cartao-bandeira>
+    <span class="ms-2">Cartão de {{ cartao.tipoCartao!.toLowerCase() }} terminado em {{
+      cartao.numeroCartao?.substr(-4) }}</span>
+  </div>
+  <mat-card-title> {{cartao.apelido}} </mat-card-title>
+  <mat-card-content>
+    <span>{{ cartao.enderecoCobranca?.logradouro }}, nº {{ cartao.enderecoCobranca?.numero }}</span>
+    <span>{{ cartao.enderecoCobranca?.bairro }}</span>
+    <span>{{ cartao.enderecoCobranca?.cidade }}, {{ cartao.enderecoCobranca?.uf }}</span>
+    <span>CEP: {{ cartao.enderecoCobranca?.cep ?? '' | mask: '00000-000' }}</span> -->
+    <!-- Cartão Padrão -->
+    <!-- <a class="cartao__link cartao__link--default" *ngIf="!cartao.isPadrao; else noCartaoPadrao" (click)="definirCartaoPadrao(cartao)">
+      Definir como cartão padrão
+    </a>
+    <ng-template #noCartaoPadrao>
+      <strong>Cartão padrão</strong>
+    </ng-template>
+  </mat-card-content>
+  <span class="spacer"></span>
+  <mat-card-actions>
+    <button mat-button (click)="editarCartao(cartao._id!)">EDITAR</button>
+    <button mat-button (click)="removerCartao(cartao)">REMOVER</button>
+  </mat-card-actions>
+</mat-card> -->

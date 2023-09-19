@@ -1,0 +1,24 @@
+.creditcard {
+  .mat-card {
+    height: 100%;
+  }
+}
+
+.cartao {
+  &__inserir {
+    margin-block-start: 20px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: 500;
+    mat-icon {
+      height: 36px;
+      width: 36px;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<div *ngIf="!modal">
+  <h1>{{ snapshot ? 'Editar' : 'Adicionar' }} Cartão</h1>
+</div>
+
+<div class="row">
+  <app-cartao-informacao [form]="form"></app-cartao-informacao>
+</div>
+<div class="row">
+  <h5 class="my-2">Endereço de Cobrança</h5>
+  <!-- <app-cep [form]="form"></app-cep> -->
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <ng-container *ngIf="modal.hasOwnProperty('component')">
+      <button mat-raised-button mat-dialog-close type="button" class="w-100  maps-button__flat maps-button__flat--back" >VOLTAR</button>
+    </ng-container>
+    <ng-container *ngIf="!modal.hasOwnProperty('component')">
+      <button mat-raised-button type="button" class="w-100  maps-button__flat maps-button__flat--back"
+      (click)="voltar()">VOLTAR</button>
+    </ng-container>
+  </div>
+  <div class="col-md-3">
+    <ng-container *ngIf="modal.hasOwnProperty('ngMetadataName')">
+      <button mat-raised-button type="button" class="w-100" color="primary" (click)="salvar()" >SALVAR</button>
+    </ng-container>
+    <ng-container *ngIf="!modal.hasOwnProperty('ngMetadataName')">
+      <button mat-raised-button type="button" class="w-100" color="primary" (click)="salvar()" mat-dialog-close>SALVAR</button>
+    </ng-container>
+  </div>
+</div>
