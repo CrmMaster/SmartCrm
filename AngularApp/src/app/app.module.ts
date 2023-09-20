@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DefaultModule } from './layouts/default/default.module';
 import { HomeSmartCrmModule } from './modules/home-smart-crm/home-smart-crm.module';
+import { ContatosComponent } from './modules/contatos/contatos.component';
+
 
 @NgModule({
   declarations: [AppComponent],

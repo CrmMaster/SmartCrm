@@ -1,0 +1,39 @@
+<div class="container__geral">
+    <div class="container__imagem">
+        <img class="tamanho__imagem" src="./assets/img/imagemlogin.jpg" alt="" width="100%">
+    </div>
+    <div class="container__informacoes">
+        <div class="container__informacoes_inputs">
+            <h3 class="texto_login">
+                <img src="./assets/img/logo.png" alt="">
+            </h3>
+            <div>
+                <mat-form-field>
+                    <mat-label>Usuario</mat-label>
+                    <input matInput placeholder="Usuario" required>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field class="tamanho_inputs">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="corretor@imiboliaria.com.br" required>
+                    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                  </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>Digite sua senha</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" required>   
+                  </mat-form-field>
+            </div> 
+            <div>
+                <a mat-flat-button class="btn_login" routerLink="/smart/dashboard">Entrar</a>
+            </div>
+            <span>
+                <p>Ainda não tem uma conta? 
+                    <a routerLink="/user/cadastro">Cadastre-se</a>
+                </p>
+            </span>
+        </div>
+    </div>
+</div>

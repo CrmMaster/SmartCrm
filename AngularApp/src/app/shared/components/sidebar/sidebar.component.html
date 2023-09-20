@@ -1,4 +1,5 @@
 <mat-nav-list>
+    <!-- FAZE UM COMPONENTE PARA ESSA PARTE -->
     <div class="perfil-card">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1cX9dpf4lfvlGU-tulb3WIuHp9y9MoDM8exYT2YTqlw&s" alt="">
         <div class="header">
@@ -11,22 +12,16 @@
    
     <mat-divider></mat-divider>
     
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">      
-        Principal
-    </a> 
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">post</a>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/cadastroCliente">Cadastro Cliente</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="dashboard"> <mat-icon>insert_chart</mat-icon>Dashboard</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="dashboard"> <mat-icon>home</mat-icon>Imóveis</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="contatos"><mat-icon>person</mat-icon>Contatos</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="contatos"><mat-icon>event</mat-icon>Atendimentos</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="contatos"><mat-icon>check</mat-icon>Tarefas</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="contatos"><mat-icon>web</mat-icon>Portais</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="contatos"><mat-icon>dashboard</mat-icon>Relatórios</a>
+    
     
     <mat-divider></mat-divider>
     
-    <h2 matSubheader>Ferramentas</h2>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/contato">
-        <mat-icon>import_contacts</mat-icon>
-        Contatos
-    </a>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/contato">
-        <mat-icon>contact_phone</mat-icon>
-        Leads
-    </a>
 </mat-nav-list>
 

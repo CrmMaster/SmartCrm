@@ -1,35 +1,25 @@
-<mat-toolbar>
-    <mat-toolbar-row>
-        <span><img src="./assets/img/300.png" alt=""></span>
-
-        <button mat-button color="basic" (click)="abrirFecharMenu()">
-            <mat-icon>menu</mat-icon>
-        </button>
-
-        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
-            <ul fxLayout="row" fxLayoutgap="20px">
-                <li>
-                    <button mat-button>
-                        <mat-icon>settings</mat-icon>
-                    </button>
-                </li>
-                <li>
-                    <button mat-button>
-                        <mat-icon>helpe_outline</mat-icon>
-                    </button>
-                </li>
-                <li>
-                    <button mat-button [matMenuTriggerFor]="menu">
-                        <mat-icon>person_outline</mat-icon>
-                    </button>
-                        <mat-menu #menu="matMenu">
-                            <button mat-menu-item>
-                                <mat-icon>exit_to_app</mat-icon>
-                                Logout
-                            </button>
-                        </mat-menu>
-                </li>
-            </ul>
+<nav class="navbar bg-header">
+    <div class="container-fluid">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-md-3 align-center">
+                     <img src="./assets/img/300.png" alt="">
+                     <button class="btn btn-sm btn-outline text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                        <i class="bi bi-list"></i>
+                     </button>
+                </div>
+                <div class="col-md-9 align-self-center text-end">
+                    <div class="btn-group dropdown-center">
+                        <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                          <i class="bi bi-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                          <li><a class="dropdown-item" routerLink="/user/login"><i class="bi bi-person"></i>Sair</a></li>
+                        </ul>
+                      </div>
+                </div>
+               </div>
         </div>
-    </mat-toolbar-row>
-</mat-toolbar>
+    </div>
+  </nav>
+

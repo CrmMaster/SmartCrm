@@ -12,3 +12,27 @@ ul li{
 .btn-novo{
     background-color: red;
 }
+
+.btn_add{
+    background-color: green !important;
+    border-radius: 25% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+}
+
+.btn_add mat-icon{
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .btn-mobile {
+      width: 100% !important;
+      margin-top: 3px;
+    }
+  }
+

@@ -76,6 +76,9 @@ header {
   border: solid 1px #bcd0e5;
   color: #22343d;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login:hover{
@@ -93,6 +96,9 @@ header {
   border: solid 1px #bcd0e5;
   margin-left: 10px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .created:hover{

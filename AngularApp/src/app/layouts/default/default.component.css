@@ -4,6 +4,10 @@
     height: 100%;
 }
 
+.container_principal{
+    height: 100vh;
+}
+
 mat-drawer{
     width: 20rem;
     
@@ -11,13 +15,14 @@ mat-drawer{
     color: black;
 }
 
-mat-drawer-container{
+.sidebar{
     height: 100%;
     background-color: #f0ebeb;
 }
 
 mat-drawer-content{
     padding: 1.5rem;
+    
     
 }
 

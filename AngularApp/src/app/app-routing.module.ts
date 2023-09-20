@@ -4,6 +4,9 @@ import { DefaultComponent } from './layouts/default/default.component';
 import { CadastroClienteComponent } from './modules/cadastro-cliente/cadastro-cliente.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { PostsComponent } from './modules/posts/posts.component';
+import { LoginComponent } from './modules/user/login/login.component';
+import { CadastroComponent } from './modules/user/cadastro/cadastro.component';
+import { ContatosComponent } from './modules/contatos/contatos.component';
 
 const routes: Routes = [
   {
@@ -12,11 +15,11 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'dashboard',
+    path: 'smart',
     component: DefaultComponent,
     children: [
       {
-        path: '',
+        path: 'dashboard',
         component: DashboardComponent,
       },
       {
@@ -27,6 +30,15 @@ const routes: Routes = [
         path: 'cadastroCliente',
         component: CadastroClienteComponent,
       },
+      {
+        path: 'contatos',
+        children:[
+          {
+            path: '',
+            component: ContatosComponent
+          }
+        ]
+      }
     ],
   },
   {
@@ -36,6 +48,22 @@ const routes: Routes = [
         (m) => m.HomeSmartCrmModule
       ),
   },
+  {
+    path: 'user',
+    children:[
+      {
+        path: '',
+        component: LoginComponent,
+      },
+      {path:'login',
+      component: LoginComponent
+      },
+      {path:'cadastro',
+      component: CadastroComponent
+      }
+    ]
+  }
+  
 ];
 
 @NgModule({

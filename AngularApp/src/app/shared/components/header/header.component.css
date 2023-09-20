@@ -1,8 +1,10 @@
-mat-toolbar{
+.bg-header{
     background-color: #0E2D60;
     padding: 1rem 0;   
 }
 
-mat-icon{
-    color: white;
+.bg-botao-transparente{
+    background-color: transparent;
+    border: 1px solid;
+   
 }

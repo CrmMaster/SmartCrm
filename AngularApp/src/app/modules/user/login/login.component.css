@@ -1,0 +1,53 @@
+.example-right-align {
+    text-align: right;
+  }
+  
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  input.example-right-align {
+    -moz-appearance: textfield;
+  }
+
+  .btn_login{
+    background-color: #047B6E !important;
+    width: 100%;
+    color: white !important;
+    padding: 1.5rem;
+  }
+
+  .container__geral{
+    display: flex;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+  }
+
+  .container__imagem{
+    width: 50%;
+  }
+
+  .container__informacoes{
+    width: 50%;
+  }
+
+  .container__informacoes_inputs{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  mat-form-field{
+    width: 100% !important;
+  }
+
+
+  .texto_login{
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .tamanho__imagem{
+    height: 100vh;
+  }

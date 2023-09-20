@@ -27,6 +27,9 @@ import {HighchartsChartModule} from 'highcharts-angular';
 import { IndexCadastroClienteComponent } from './components/index-cadastro-cliente/index-cadastro-cliente.component';
 import { CadastroClienteComponent } from '../modules/cadastro-cliente/cadastro-cliente.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { ContatosComponent } from '../modules/contatos/contatos.component';
+import {DialogModule} from '@angular/cdk/dialog';
+import { ModalParaCadastroComponent } from './components/modal-para-cadastro/modal-para-cadastro.component';
 
 
 
@@ -42,6 +45,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     GraficoAreaComponent,
     IndexCadastroClienteComponent,
     CadastroClienteComponent,
+    ContatosComponent,
+    ModalParaCadastroComponent
     
   ],
   imports: [
@@ -72,7 +77,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     RouterModule,
     HighchartsChartModule,
     MatTooltipModule,
-    
+    DialogModule,
 
   ],
   exports : [
@@ -81,7 +86,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     SidebarComponent,
     GraficoAreaComponent,
     CadastroClienteComponent,
-    CardContatosComponent
+    CardContatosComponent,
+    ContatosComponent
     
   ]
 })
