@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FormBuilder, Validators, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-cadastro-imovel',
@@ -7,7 +7,7 @@ import {FormBuilder, Validators, FormsModule, ReactiveFormsModule} from '@angula
   styleUrls: ['./cadastro-imovel.component.css']
 })
 export class CadastroImovelComponent {
-  
+
   firstFormGroup = this._formBuilder.group({
     firstCtrl: ['', Validators.required],
   });
@@ -16,5 +16,24 @@ export class CadastroImovelComponent {
   });
 
   isLinear = false;
+  currentStep = 0;
+
   constructor(private _formBuilder: FormBuilder) {}
+
+  nextStep() {
+    if (this.currentStep < 1) { // Adjust the number of steps as needed
+      this.currentStep++;
+    }
+  }
+
+  prevStep() {
+    if (this.currentStep > 0) {
+      this.currentStep--;
+    }
+  }
+
+  onSubmit() {
+    // Handle the form submission logic here
+  }
 }
+
