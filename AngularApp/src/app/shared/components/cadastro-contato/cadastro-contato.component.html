@@ -1,0 +1,149 @@
+<mat-stepper class="largura" orientation="horizontal" [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Informações Pessoais</ng-template>
+        <div class="row">
+          <mat-form-field class="col-md-3 col-12">
+            <mat-label >Nome</mat-label>
+            <input autocomplete="off" matInput placeholder="Paulo" formControlName="firstCtrl" required>
+          </mat-form-field>
+          <mat-form-field class="col-md-3 col-12">
+              <mat-label>Sobre Nome</mat-label>
+              <input autocomplete="off" matInput placeholder="José" formControlName="firstCtrl">
+            </mat-form-field>
+            <mat-form-field class="col-md-3 col-12">
+              <mat-label>Celular</mat-label>
+              <input autocomplete="off" matInput placeholder="(19) 99999-9999" formControlName="firstCtrl" required mask="(00)0 0000-0000">
+            </mat-form-field>
+            <mat-form-field class="col-md-3 col-12" class="col-md-3 col-12">
+                <mat-label>E-mail</mat-label>
+                <input autocomplete="off" matInput type="email" placeholder="paulo@paulo.com.br" formControlName="firstCtrl">
+              </mat-form-field>
+              <mat-form-field class="col-md-3 col-12" class="col-md-3 col-12">
+                <mat-label>CPF</mat-label>
+                <input autocomplete="off" matInput placeholder="436.105.178-08" formControlName="firstCtrl" [mask]="'000.000.000-00'" >
+              </mat-form-field>
+              <mat-form-field class="col-md-3 col-12" class="col-md-3 col-12">
+                <mat-label>RG</mat-label>
+                <input autocomplete="off" matInput formControlName="firstCtrl" [mask]="'00.000.000-0'" >
+              </mat-form-field>
+              <mat-form-field class="col-md-3 col-12">
+                <mat-label>Genero</mat-label>
+                <input autocomplete="off" matInput formControlName="firstCtrl">
+              </mat-form-field>
+              <mat-form-field class="col-md-3 col-12">
+                <mat-label>Estado Civil</mat-label>
+                <input autocomplete="off" matInput placeholder="" formControlName="firstCtrl">
+              </mat-form-field>
+              <mat-form-field class="col-md-3 col-12">
+                <mat-label>Nascionalidade</mat-label>
+                <input autocomplete="off" matInput placeholder="Brasileiro" formControlName="firstCtrl">
+              </mat-form-field>
+              <mat-form-field class="example-form-field col-md-3 col-12">
+                <mat-label>Data de Nascimento</mat-label>
+                <input autocomplete="off" matInput [matDatepicker]="datepicker">
+                <mat-hint>DD/MM/AAAA</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="datepicker"></mat-datepicker-toggle>
+                <mat-datepicker #datepicker>
+                  <mat-datepicker-actions>
+                    <button mat-button matDatepickerCancel>Cancelar</button>
+                    <button mat-raised-button color="primary" matDatepickerApply>Aplicar</button>
+                  </mat-datepicker-actions>
+                </mat-datepicker>
+              </mat-form-field>
+          </div>
+
+        <div class="text-end">
+          <button class="btn btn-sm btn-primary text-white ms-1" mat-button matStepperNext>Próximo</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <!--Segunda parte-->
+
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Endereço</ng-template>
+        <div class="row">
+          <mat-form-field class="col-md-3 col-12">
+            <mat-label>Rua</mat-label>
+            <input autocomplete="off" matInput type="" formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>
+          <mat-form-field class="col-md-3 col-12">
+            <mat-label>CEP</mat-label>
+            <input autocomplete="off" matInput type="" formControlName="secondCtrl" placeholder="" [mask]="'00000-000'"
+                   required>
+          </mat-form-field>
+          <mat-form-field class="col-md-3 col-12">
+            <mat-label>Bairro</mat-label>
+            <input autocomplete="off" matInput type="" formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>
+          <mat-form-field class="col-md-3 col-12">
+            <mat-label>Complemento</mat-label>
+            <input autocomplete="off" matInput type="" formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>
+          <mat-form-field class="col-md-3 col-12">
+            <mat-label>UF</mat-label>
+            <input autocomplete="off"
+                  matInput 
+                  formControlName="secondCtrl" 
+                  placeholder=""
+                  [mask]="'xx'"
+                  required>
+          </mat-form-field>
+          <mat-form-field class="col-md-3 col-12">
+            <mat-label>Cidade</mat-label>
+            <input autocomplete="off" matInput type="number" formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>
+  
+        </div>
+  
+        <div class="text-end">
+          <button class="btn btn-sm btn-secondary text-white" mat-button matStepperPrevious>Voltar</button>
+          <button class="btn btn-sm btn-primary text-white ms-1" mat-button matStepperNext>Próximo</button>
+        </div>
+      </form>
+    </mat-step>
+  
+    <!--Informações adicionais do cadastro-->
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Adicionais</ng-template>
+        <div class="row">
+          <mat-form-field class="col-md-3 col-12">
+            <mat-label>Preferencia por contato</mat-label>
+            <input autocomplete="off" matInput type="text" formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>   
+          <mat-form-field class="col-md-3 col-12">
+            <mat-label>Interesse de Imóvel</mat-label>
+            <input autocomplete="off" matInput type="text" formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>
+          <mat-form-field class="col-md-3 col-12">
+            <mat-label>Localização desejada</mat-label>
+            <input autocomplete="off" matInput type="text" formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>
+          <mat-form-field class="col-md-3 col-12">
+            <mat-label>Faixa de preço</mat-label>
+            <input autocomplete="off" matInput type="text" formControlName="secondCtrl" placeholder=""
+                   required>
+          </mat-form-field>   
+          <mat-form-field class="col-md-12 col-12">
+            <mat-label>Obs Cadastral</mat-label>
+            <textarea matInput type="text" formControlName="secondCtrl" placeholder="">
+            </textarea>
+          </mat-form-field>  
+        </div>
+        <div class="text-end">
+          <button class="btn btn-sm btn-secondary text-white" mat-button matStepperPrevious>Voltar</button>
+          <button class="btn btn-sm btn-success text-white ms-1" mat-button (click)="stepper.reset()">Cadastrar</button>
+        </div>
+      </form>
+    </mat-step>
+  </mat-stepper>

@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { DefaultModule } from './layouts/default/default.module';
 import { HomeSmartCrmModule } from './modules/home-smart-crm/home-smart-crm.module';
 import { ContatosComponent } from './modules/contatos/contatos.component';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
+
+
 
 
 @NgModule({
@@ -17,8 +20,10 @@ import { ContatosComponent } from './modules/contatos/contatos.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     DefaultModule,
+    NgxMaskDirective, NgxMaskPipe
+    
   ],
-  providers: [],
+  providers: [provideNgxMask()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

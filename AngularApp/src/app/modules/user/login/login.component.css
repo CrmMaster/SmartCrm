@@ -51,3 +51,13 @@
   .tamanho__imagem{
     height: 100vh;
   }
+
+  @media screen and (max-width: 568px){
+    .container__imagem{
+      display: none;
+    }
+    .container__informacoes{
+      width: 100%;
+      margin: 0 auto;
+    }
+  }

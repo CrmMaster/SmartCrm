@@ -30,6 +30,10 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { ContatosComponent } from '../modules/contatos/contatos.component';
 import {DialogModule} from '@angular/cdk/dialog';
 import { ModalParaCadastroComponent } from './components/modal-para-cadastro/modal-para-cadastro.component';
+import { CadastroContatoComponent } from './components/cadastro-contato/cadastro-contato.component';
+import { NgxMaskDirective, NgxMaskPipe } from 'ngx-mask';
+
+
 
 
 
@@ -46,7 +50,8 @@ import { ModalParaCadastroComponent } from './components/modal-para-cadastro/mod
     IndexCadastroClienteComponent,
     CadastroClienteComponent,
     ContatosComponent,
-    ModalParaCadastroComponent
+    ModalParaCadastroComponent,
+    CadastroContatoComponent
     
   ],
   imports: [
@@ -78,6 +83,11 @@ import { ModalParaCadastroComponent } from './components/modal-para-cadastro/mod
     HighchartsChartModule,
     MatTooltipModule,
     DialogModule,
+    NgxMaskDirective,
+     NgxMaskPipe
+    
+    
+    
 
   ],
   exports : [
